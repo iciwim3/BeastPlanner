@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		43E54E18225CABB100C81FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E17225CABB100C81FA9 /* AppDelegate.swift */; };
-		43E54E1A225CABB100C81FA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E19225CABB100C81FA9 /* ViewController.swift */; };
+		43E54E1A225CABB100C81FA9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E19225CABB100C81FA9 /* MainVC.swift */; };
 		43E54E1D225CABB100C81FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54E1B225CABB100C81FA9 /* Main.storyboard */; };
 		43E54E20225CABB100C81FA9 /* BeastPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E1E225CABB100C81FA9 /* BeastPlanner.xcdatamodeld */; };
 		43E54E22225CABB400C81FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E54E21225CABB400C81FA9 /* Assets.xcassets */; };
 		43E54E25225CABB400C81FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54E23225CABB400C81FA9 /* LaunchScreen.storyboard */; };
+		43E54E2E225CAE3A00C81FA9 /* bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43E54E2D225CAE3A00C81FA9 /* bebas.ttf */; };
+		43E54E30225CAE5E00C81FA9 /* Amithen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43E54E2F225CAE5E00C81FA9 /* Amithen.ttf */; };
+		43E54E32225CB5A700C81FA9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E31225CB5A700C81FA9 /* Coordinator.swift */; };
+		43E54E34225CB5F200C81FA9 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E33225CB5F200C81FA9 /* MainCoordinator.swift */; };
+		43E54E36225CB69C00C81FA9 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E35225CB69C00C81FA9 /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43E54E14225CABB100C81FA9 /* BeastPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeastPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E54E17225CABB100C81FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43E54E19225CABB100C81FA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43E54E19225CABB100C81FA9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		43E54E1C225CABB100C81FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E54E1F225CABB100C81FA9 /* BeastPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeastPlanner.xcdatamodel; sourceTree = "<group>"; };
 		43E54E21225CABB400C81FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E54E24225CABB400C81FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E54E26225CABB400C81FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E54E2D225CAE3A00C81FA9 /* bebas.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bebas.ttf; sourceTree = "<group>"; };
+		43E54E2F225CAE5E00C81FA9 /* Amithen.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amithen.ttf; sourceTree = "<group>"; };
+		43E54E31225CB5A700C81FA9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		43E54E33225CB5F200C81FA9 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		43E54E35225CB69C00C81FA9 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,27 @@
 			isa = PBXGroup;
 			children = (
 				43E54E17225CABB100C81FA9 /* AppDelegate.swift */,
-				43E54E19225CABB100C81FA9 /* ViewController.swift */,
+				43E54E31225CB5A700C81FA9 /* Coordinator.swift */,
+				43E54E33225CB5F200C81FA9 /* MainCoordinator.swift */,
+				43E54E35225CB69C00C81FA9 /* Storyboarded.swift */,
+				43E54E19225CABB100C81FA9 /* MainVC.swift */,
 				43E54E1B225CABB100C81FA9 /* Main.storyboard */,
 				43E54E21225CABB400C81FA9 /* Assets.xcassets */,
+				43E54E2C225CADF900C81FA9 /* CustomFonts */,
 				43E54E23225CABB400C81FA9 /* LaunchScreen.storyboard */,
 				43E54E26225CABB400C81FA9 /* Info.plist */,
 				43E54E1E225CABB100C81FA9 /* BeastPlanner.xcdatamodeld */,
 			);
 			path = BeastPlanner;
+			sourceTree = "<group>";
+		};
+		43E54E2C225CADF900C81FA9 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				43E54E2D225CAE3A00C81FA9 /* bebas.ttf */,
+				43E54E2F225CAE5E00C81FA9 /* Amithen.ttf */,
+			);
+			path = CustomFonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +148,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E54E30225CAE5E00C81FA9 /* Amithen.ttf in Resources */,
 				43E54E25225CABB400C81FA9 /* LaunchScreen.storyboard in Resources */,
 				43E54E22225CABB400C81FA9 /* Assets.xcassets in Resources */,
+				43E54E2E225CAE3A00C81FA9 /* bebas.ttf in Resources */,
 				43E54E1D225CABB100C81FA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E54E32225CB5A700C81FA9 /* Coordinator.swift in Sources */,
 				43E54E20225CABB100C81FA9 /* BeastPlanner.xcdatamodeld in Sources */,
-				43E54E1A225CABB100C81FA9 /* ViewController.swift in Sources */,
+				43E54E1A225CABB100C81FA9 /* MainVC.swift in Sources */,
+				43E54E34225CB5F200C81FA9 /* MainCoordinator.swift in Sources */,
 				43E54E18225CABB100C81FA9 /* AppDelegate.swift in Sources */,
+				43E54E36225CB69C00C81FA9 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
