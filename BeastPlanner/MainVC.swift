@@ -18,8 +18,12 @@ class MainVC: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createNavigationTitleWithImage()
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.rowHeight = 140
     }
 
 }
@@ -38,7 +42,7 @@ extension MainVC: UITableViewDelegate {
 extension MainVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return titles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,6 +50,14 @@ extension MainVC: UITableViewDataSource {
         let title = titles[indexPath.row]
         configureText(for: cell, with: title)
         return cell
+    }
+    
+    func createNavigationTitleWithImage() {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 250, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "bmp.png")
+        imageView.image = image
+        self.navigationItem.titleView = imageView
     }
     
 }

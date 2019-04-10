@@ -47,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		438BF012225D812300A42A5F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		43E54E0B225CABB100C81FA9 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +73,7 @@
 		43E54E16225CABB100C81FA9 /* BeastPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				438BF012225D812300A42A5F /* Helpers */,
 				43E54E17225CABB100C81FA9 /* AppDelegate.swift */,
 				43E54E31225CB5A700C81FA9 /* Coordinator.swift */,
 				43E54E33225CB5F200C81FA9 /* MainCoordinator.swift */,
