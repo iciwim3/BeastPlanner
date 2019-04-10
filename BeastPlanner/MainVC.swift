@@ -12,6 +12,8 @@ class MainVC: UIViewController, Storyboarded {
     
     weak var coordinator: MainCoordinator?
     
+    let titles = ["What's Dope", "What Needs Work", "Speak It Into Existence", "Daily Tasks", "Ideas"]
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -22,10 +24,17 @@ class MainVC: UIViewController, Storyboarded {
 
 }
 
+// Delegate Methods - What happens when the user interacts with the tableview
 extension MainVC: UITableViewDelegate {
     
+    func configureText(for cell: UITableViewCell, with title: String) {
+        if let label = cell.viewWithTag(100) as? UILabel {
+            label.text = title
+        }
+    }
 }
 
+// Datasource Methods - What the tableview will display
 extension MainVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,7 +42,10 @@ extension MainVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+        let title = titles[indexPath.row]
+        configureText(for: cell, with: title)
+        return cell
     }
     
 }
