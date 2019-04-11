@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430A32D3225EC5F900DC1D61 /* NoteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A32D2225EC5F900DC1D61 /* NoteListVC.swift */; };
+		430A32D7225ECCAA00DC1D61 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A32D6225ECCAA00DC1D61 /* Notes.swift */; };
 		43E54E18225CABB100C81FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E17225CABB100C81FA9 /* AppDelegate.swift */; };
 		43E54E1A225CABB100C81FA9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54E19225CABB100C81FA9 /* MainVC.swift */; };
 		43E54E1D225CABB100C81FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54E1B225CABB100C81FA9 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430A32D2225EC5F900DC1D61 /* NoteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListVC.swift; sourceTree = "<group>"; };
+		430A32D6225ECCAA00DC1D61 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		43E54E14225CABB100C81FA9 /* BeastPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeastPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E54E17225CABB100C81FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E54E19225CABB100C81FA9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -47,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430A32D4225EC9FF00DC1D61 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				43E54E31225CB5A700C81FA9 /* Coordinator.swift */,
+				43E54E33225CB5F200C81FA9 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		430A32D5225ECA1600DC1D61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43E54E19225CABB100C81FA9 /* MainVC.swift */,
+				430A32D2225EC5F900DC1D61 /* NoteListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		438BF012225D812300A42A5F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +95,12 @@
 		43E54E16225CABB100C81FA9 /* BeastPlanner */ = {
 			isa = PBXGroup;
 			children = (
-				438BF012225D812300A42A5F /* Helpers */,
 				43E54E17225CABB100C81FA9 /* AppDelegate.swift */,
-				43E54E31225CB5A700C81FA9 /* Coordinator.swift */,
-				43E54E33225CB5F200C81FA9 /* MainCoordinator.swift */,
+				438BF012225D812300A42A5F /* Helpers */,
+				430A32D4225EC9FF00DC1D61 /* Coordinators */,
+				430A32D5225ECA1600DC1D61 /* Controllers */,
+				430A32D6225ECCAA00DC1D61 /* Notes.swift */,
 				43E54E35225CB69C00C81FA9 /* Storyboarded.swift */,
-				43E54E19225CABB100C81FA9 /* MainVC.swift */,
 				43E54E1B225CABB100C81FA9 /* Main.storyboard */,
 				43E54E21225CABB400C81FA9 /* Assets.xcassets */,
 				43E54E2C225CADF900C81FA9 /* CustomFonts */,
@@ -172,11 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E54E32225CB5A700C81FA9 /* Coordinator.swift in Sources */,
+				430A32D3225EC5F900DC1D61 /* NoteListVC.swift in Sources */,
 				43E54E20225CABB100C81FA9 /* BeastPlanner.xcdatamodeld in Sources */,
 				43E54E1A225CABB100C81FA9 /* MainVC.swift in Sources */,
 				43E54E34225CB5F200C81FA9 /* MainCoordinator.swift in Sources */,
 				43E54E18225CABB100C81FA9 /* AppDelegate.swift in Sources */,
 				43E54E36225CB69C00C81FA9 /* Storyboarded.swift in Sources */,
+				430A32D7225ECCAA00DC1D61 /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

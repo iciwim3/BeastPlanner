@@ -31,6 +31,13 @@ class MainVC: UIViewController, Storyboarded {
 // Delegate Methods - What happens when the user interacts with the tableview
 extension MainVC: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            coordinator?.noteList()
+            cell.textLabel?.text = navigationItem.title
+        }
+    }
+    
     func configureText(for cell: UITableViewCell, with title: String) {
         if let label = cell.viewWithTag(100) as? UILabel {
             label.text = title
@@ -58,6 +65,10 @@ extension MainVC: UITableViewDataSource {
         let image = UIImage(named: "bmp.png")
         imageView.image = image
         self.navigationItem.titleView = imageView
+    }
+    
+    func getNotes(for cell: UITableViewCell, with title: String) {
+        
     }
     
 }
